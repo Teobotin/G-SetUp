@@ -11,17 +11,56 @@
 </head>
 <body>
     <header>
-        <div>
-            <a href="../index.html"><img src="../img/logo.png" alt="logo-setup"></a>
-            <h1>G-SetUp</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="./product.html">Productos</a></li>
-                <li><a href="./proximamente.html">Proximamente</a></li>
-                <li><a href="./sponsors.html">Sponsors</a></li>
-                <li><a href="./support.html">Soporte</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../img/logo.png" alt="logo-gsetup"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./acerca-de.html">Acerca de Nosotro</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./product.html">Productos</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./a50.html">A50</a></li>
+                                <li><a class="dropdown-item" href="./apex-pro-tkl.html">Apex Pro TKL</a></li>
+                                <li><a class="dropdown-item" href="./g-pro-superlight.html">G-PRO Superlight</a>
+                                </li>
+                                <li><a class="dropdown-item" href="./producto4.html">Producto4</a></li>
+                                <li><a class="dropdown-item" href="./producto5.html">Producto5</a></li>
+                                <li><a class="dropdown-item" href="./producto6.html">Producto6</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./proximamente.html">Proximamente</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sponsors.html">Sponsor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./support.html">Soporte</a>
+                        </li>
+                    </ul>
+                    <!--Buscador-->
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="Buscar" placeholder="Buscar" aria-label="Buscar">
+                        <button class="btn btn-outline-primary" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
