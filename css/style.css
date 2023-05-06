@@ -26,6 +26,12 @@ nav div div form .btn-outline {
 }
 
 /*Main INDEX*/
+main{
+    background: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(255, 255, 255));
+    background-size: contain;
+    background-attachment: fixed;
+}
+
 #banner .carousel .carousel-inner div img {
     height:  auto;
 }
@@ -33,6 +39,7 @@ nav div div form .btn-outline {
 .productos-destacados div {
     display: flex;
     background-color: #002e8b;
+    margin: 25px;
 }
 
 .productos-destacados div div{
