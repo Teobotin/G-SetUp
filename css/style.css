@@ -26,16 +26,15 @@ nav div div form .btn-outline {
     border-color: #3168D8
 }
 
-/*Main INDEX carouse*/
+/*Main*/
 main{
-    height: 3000px;
     background: linear-gradient(to bottom right, rgb(8, 0, 255), rgb(107, 159, 255));
     background-size: contain;
     background-attachment: fixed;
 }
-
+/*Main INDEX carousel*/
 #banner1 .carousel .carousel-inner div img {
-    height:  auto;
+    height: auto;
 }
 
 /*Main INDEX productos-destacados*/
@@ -102,7 +101,7 @@ main{
     background-repeat: no-repeat ;
     background-size: cover;
     background-position: center;
-    margin: 50px;
+    margin: 50px 0px 0px 0px ;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
 
@@ -119,8 +118,6 @@ main{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
     align-items: center;
 }
 .sub-titulo h2{
@@ -159,6 +156,32 @@ main{
     color: rgb(255, 255, 255);
 
 }
+/*Main Soporte*/
+#banner-soporte img{
+    height: fit-content;
+    width: 100%;
+    background-repeat: no-repeat ;
+    background-size: cover;
+    background-position: center;
+    margin: 0px;
+}
+#form .form-titulo{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 30px;
+}
+#form .form-titulo h2{
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+}
+#form form{
+    margin: 30px 30px 0px 30px;
+    padding-bottom: 30px;
+}
+
+
 /*Footer*/
 
 footer .resumen{
@@ -177,7 +200,7 @@ footer .resumen ul li {
 footer .resumen ul li h3{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5vmax;
+    font-size: 1rem;
 }
 footer .resumen ul li ul li div{
     height: 15vh;
@@ -201,7 +224,7 @@ footer .resumen ul li ul li ul {
 }
 footer .resumen ul li ul li ul li{
     color: #ffffff;
-    font-size: 1vmax;
+    font-size: 0.6rem;
 }
 
 /*copyright*/
@@ -215,7 +238,7 @@ footer .copyright div ul{
     justify-content: center;
     padding: 15px 6px 6px 6px;
     color: #ffffff;
-    font-size: 1.5vmax;
+    font-size: 0.5rem;
 }
 footer .copyright div ul .espaciado-copy{
     border-right: solid white 1px;
@@ -230,7 +253,7 @@ footer .copyright div h4{
     margin: 0px;
     padding-bottom: 10px;
     color:#ffffff;
-    font-size: 1vmax;
+    font-size: 0.8rem;
 }
 /*CAMBIO DE PANTALLAS*/
 /*1300*/
@@ -268,7 +291,7 @@ footer .copyright div h4{
         }
 }
 
-/*991*/
+
 @media screen and (max-width:670px){
     .productos-destacados .destacado-caja{
         display: flex;
@@ -284,4 +307,32 @@ footer .copyright div h4{
         background-image: url(../img/162868-gadgets-news-steelseries-has-upgraded-the-apex-pro-tkl-and-made-it-even-faster-image1-ikbn7dxuxr.avif);
         height: 436px;
     }
+}
+/*600*/
+@media screen and (max-width:600px){
+    #form .form-titulo h2{
+        font-size: 2.0rem;
+    }
+}
+/*450*/
+@media screen and (max-width:450px){
+    footer .resumen ul li ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    footer .resumen ul li ul li div{
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+    }
+    footer .resumen ul li ul li div img{
+        width: 23px;
+        height: 23px;
+    }
+}
+
+#form .form-titulo h2{
+    font-size: 2.5rem;
 }
