@@ -106,24 +106,13 @@ main{
 }
 
 /*Main PRODUCTOS*/
-
-.sub-titulo {
-    display: flex;
-    justify-content: center;
-    height: 30vh;
+.banner-productos img{
+    height: fit-content;
     width: 100%;
-    height: 50vh;
-    background-image: url(../img/G-SetUp-promo.png);
-    width: 100%;
+    background-repeat: no-repeat ;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    align-items: center;
-}
-.sub-titulo h2{
-    font-family: 'Poppins', sans-serif;
-    font-size: 5vw;
-    color: #000000;
+    margin: 0px;
 }
 
 .catalogo-productos div{
