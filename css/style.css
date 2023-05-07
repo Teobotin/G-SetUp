@@ -3,6 +3,8 @@
 *{
     margin: 0;
     padding: 0;
+    list-style: none;
+    text-decoration: none;
 }
 
 /*Header*/
@@ -51,13 +53,10 @@ main{
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
 .productos-destacados .destacado-caja div {
-    height: 200px;
+    height: 20vh;
 }
 .productos-destacados .destacado-caja div div{
     background-color: #000000;
-}
-.productos-destacados .destacado-caja div div {
-    text-decoration: none;
     color: #ffffff;
 }
 .productos-destacados .destacado-caja div div h3 {
@@ -65,11 +64,12 @@ main{
 }
 .productos-destacados .destacado-caja div div p {
     padding: 0px 10px 0px 10px;
+    font-size: 1.3vmax;
 }
 .productos-destacados .destacado-caja div div h3 a{
-    text-decoration: none;
     color: #ffffff;
-
+    text-decoration: none;
+    font-size: 2.5vmax;
 }
 .productos-destacados .destacado-caja div .foto-destacado-1{
     height: fit-content;
@@ -146,48 +146,82 @@ main{
     justify-content: center;
 }
 .catalogo-productos div div h3 a{
-    text-decoration: none;
     color: rgb(255, 255, 255);
 
 }
 /*Footer*/
 
-footer section{
+footer .resumen{
     background-color: black;
     display: flex;
-    height: 30vh;
+    height: max-content;
 }
-footer section ul{
+footer .resumen ul{
     width: 100%;
     display: flex;
     justify-content: center;
 }
-footer section ul li {
-    list-style: none;
+footer .resumen ul li {
     margin: 10px;
 }
-footer section ul li h3{
-    color: #3168D8;
+footer .resumen ul li h3{
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 2vmax;
+    font-size: 1.5vmax;
+}
+footer .resumen ul li ul li div{
+    height: 15vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+footer .resumen ul li ul li div a{
+    height: fit-content;
+    width: fit-content;
+    margin: 5px;
 }
 
-footer section ul li ul{
+footer .resumen ul li ul { 
+    padding-left: 0px;
+}
+footer .resumen ul li ul li ul { 
+    display: flex;
     flex-direction: column;
     justify-content: center;
 }
-footer section ul li ul li div{
-    height: 10vh;
-    display: flex;
-    justify-content: center;
+footer .resumen ul li ul li ul li{
+    color: #ffffff;
+    font-size: 1vmax;
 }
 
-
-
-
-
+/*copyright*/
+footer .copyright {
+    background-color: #000000;
+    border-top: solid white 1px;
+}
+footer .copyright div ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 15px 6px 6px 6px;
+    color: #ffffff;
+    font-size: 1.5vmax;
+}
+footer .copyright div ul .espaciado-copy{
+    border-right: solid white 1px;
+}
+footer .copyright div ul li{
+    padding: 0px 10px 0px 10px;
+}
+footer .copyright div h4{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0px;
+    padding-bottom: 10px;
+    color:#ffffff;
+    font-size: 1vmax;
+}
 /*CAMBIO DE PANTALLAS*/
 /*1300*/
 @media screen and (max-width:1300px){
