@@ -38,25 +38,31 @@ main{
 }
 
 /*Main INDEX productos-destacados*/
-
 .productos-destacados .destacado-caja {
+    margin-top: 30px;
+    height: fit-content;
     display: flex;
     justify-content: space-evenly;
-    margin-top: 30px;
-    height: 650px;
-
 }
 .productos-destacados .destacado-caja div{
-    height: 600px;
+    height: 20vh;
     width: 40vw;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
-.productos-destacados .destacado-caja div {
-    height: 20vh;
+.productos-destacados .destacado-caja .destacado-1{
+    height: fit-content;
+    width: fit-content ;
+}
+.productos-destacados .destacado-caja .destacado-2{
+    height: fit-content;
+    width: fit-content ;
 }
 .productos-destacados .destacado-caja div div{
     background-color: #000000;
     color: #ffffff;
+    display: flex;
+    flex-direction: column;
+
 }
 .productos-destacados .destacado-caja div div h3 {
     padding: 10px 10px 0px 10px;
@@ -71,6 +77,7 @@ main{
     font-size: 2.5vmax;
 }
 .productos-destacados .destacado-caja div .foto-destacado-1{
+    grid-area: "foto-1";
     height: fit-content;
     background-image: url(../img/mouse-logitech-superlight.jpg);
     height: 436px;
@@ -81,6 +88,7 @@ main{
 }
 
 .productos-destacados .destacado-caja div .foto-destacado-2{
+    grid-area: "foto-2";
     height: fit-content;
     background-image: url(../img/teclado-apex-pro.jpg);
     height: 436px;
@@ -96,7 +104,7 @@ main{
 }
 /*Main INDEX banner 2*/
 #banner2 h3 {
-    background-image: url(../img/banner2.webp);
+    background-image: url(../img/banner2.jpg);
     height: 436px;
     background-repeat: no-repeat ;
     background-size: cover;
@@ -106,7 +114,7 @@ main{
 }
 
 /*Main PRODUCTOS*/
-.banner-productos img{
+.banner-productos a img{
     height: fit-content;
     width: 100%;
     background-repeat: no-repeat ;
@@ -279,22 +287,38 @@ footer .copyright div h4{
         height: 200px;
         }
 }
-
-
+/*800*/
+@media screen and (max-width:800px){
+    #banner1 .carousel .carousel-inner div img {
+        height: 300px;
+    }
+}
+/*670*/
 @media screen and (max-width:670px){
-    .productos-destacados .destacado-caja{
+    .productos-destacados .destacado-caja {
         display: flex;
-        flex-direction: row;
-        
+        flex-direction: column;   
+    }
+    .productos-destacados .destacado-caja .destacado-1 {
+        margin: 10px 10px 30px 10px;
+    }
+    .productos-destacados .destacado-caja .destacado-2 {
+        margin: 10px 10px 30px 10px;
+    }
+    .productos-destacados .destacado-caja div div {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
     }
     .productos-destacados .destacado-caja div .foto-destacado-1{
         background-image: url(../img/mouse-logitech-superlight.jpg);
-        height: 436px;
-
+        height: 300px;
+        width: 100%;
     }
     .productos-destacados .destacado-caja div .foto-destacado-2{
         background-image: url(../img/162868-gadgets-news-steelseries-has-upgraded-the-apex-pro-tkl-and-made-it-even-faster-image1-ikbn7dxuxr.avif);
-        height: 436px;
+        height: 300px;
+        width: 100%;
     }
 }
 /*600*/
@@ -302,9 +326,13 @@ footer .copyright div h4{
     #form .form-titulo h2{
         font-size: 2.0rem;
     }
+    #banner2 h3 {
+        height: 300px
+    }
 }
-/*450*/
-@media screen and (max-width:450px){
+
+/*458*/
+@media screen and (max-width:458px){
     footer .resumen ul li ul{
         display: flex;
         flex-direction: column;
@@ -320,8 +348,11 @@ footer .copyright div h4{
         width: 23px;
         height: 23px;
     }
+    #form .form-titulo h2{
+        font-size: 2.5rem;
+    }
+    #banner2 h3 {
+        height: 200px
+    }
 }
 
-#form .form-titulo h2{
-    font-size: 2.5rem;
-}
