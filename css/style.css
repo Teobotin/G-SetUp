@@ -79,7 +79,6 @@ main{
     font-size: 2.5vmax;
 }
 .productos-destacados .destacado-caja div .foto-destacado-1{
-    grid-area: "foto-1";
     height: fit-content;
     background-image: url(../img/mouse-logitech-superlight.jpg);
     height: 436px;
@@ -90,7 +89,6 @@ main{
 }
 
 .productos-destacados .destacado-caja div .foto-destacado-2{
-    grid-area: "foto-2";
     height: fit-content;
     background-image: url(../img/teclado-apex-pro.jpg);
     height: 436px;
@@ -124,36 +122,17 @@ main{
     background-position: center;
     margin: 0px;
 }
-
-.catalogo-productos div{
-    display: flex;
-    justify-content: center;
-    justify-content: space-evenly;
-}
-.catalogo-productos div div{
-    margin-top: 2vw;
-    background-color: #000000;
-    height: 500px;
-    width: 30vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius:  15px;
+.row .col .card{
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
 
+.row{
+    margin: 50px 50px 0px 50px;
+    padding-bottom: 50px ;
 }
-.catalogo-productos div div img{
-    height: 400px;
-    width: 25vw;
-}
-.catalogo-productos div div h3{
-    width: 10vw;
-    display: flex;
-    justify-content: center;
-}
-.catalogo-productos div div h3 a{
-    color: rgb(255, 255, 255);
-
+.row .col .card-body{
+    background-color: #000000;
+    color: white;
 }
 /*Main Soporte*/
 #banner-soporte img{
@@ -318,13 +297,12 @@ footer .copyright div h4{
         color: black ;
         border-color: black ;
     }
-}
     /*MAIN INDEX */
     .productos-destacados .destacado-caja div .foto-destacado-1{
         background-image: url(../img/mouse-logitech-superlight-media2.jpg);
         height: 200px;
         }
-        .productos-destacados .destacado-caja div .foto-destacado-2{
+    .productos-destacados .destacado-caja div .foto-destacado-2{
         height: 200px;
         }
     /*MAIN SPONSORS*/
@@ -332,7 +310,7 @@ footer .copyright div h4{
         display: flex;
         flex-direction: column;
     }
-
+}
 /*800*/
 @media screen and (max-width:800px){
     /*MAIN INDEX */
