@@ -12,8 +12,11 @@
 nav{
     background-color: black;
 }
-.navbar-light .navbar-nav .nav-link {
+.navbar-light .navbar-nav .nav-link{
     color: #3168D8;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #ffffff;
 }
 nav div a img{
     height: 13vh;
@@ -122,6 +125,7 @@ main{
     background-position: center;
     margin: 0px;
 }
+/*Main PRODUCTOS y PROXIMAMENTE*/
 .row .col .card{
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
@@ -129,11 +133,14 @@ main{
 .row{
     margin: 50px 50px 0px 50px;
     padding-bottom: 50px ;
+
 }
 .row .col .card-body{
-    background-color: #000000;
-    color: white;
+    background-color: #ececec;
+    color: black;
 }
+
+
 /*Main Soporte*/
 #banner-soporte img{
     height: fit-content;
@@ -196,6 +203,47 @@ main{
 #logo-sponsors div a img{
     border-radius: 100px;
 }
+
+/*Acerca de*/
+#banner-acerca-de h2{
+    background-image: url(../img/Banner-acerca-de.jpg);
+    height: 536px;
+    background-repeat: no-repeat ;
+    background-size: cover;
+    background-position: center;
+    margin: 0px 0px 0px 0px ;
+}
+#enfoque-web .primier-titulo-acerca-de{
+    margin: 50px 0px 0px 0px;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#enfoque-web div h2{
+    margin:30px 0px 10px 0px;    
+    font-size: 50px;
+    text-align: center;
+}
+#enfoque-web div p{
+    font-size: 20px;
+    text-align: center;
+}
+#enfoque-web .segundo-texto-acerca-de p{
+    padding-bottom: 60px;  
+    margin: 0PX;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*proximamente*/
+#banner-proximamente h2{
+    background-image: url(../img/Banner-proximamente.jpg);
+    height: 436px;
+    background-repeat: no-repeat ;
+    background-size: cover;
+    background-position: center;
+    margin: 0px 0px 0px 0px ;
+}
 /*Footer*/
 
 footer .resumen{
@@ -240,7 +288,7 @@ footer .resumen ul li ul li ul li{
     font-size: 0.6rem;
 }
 
-/*copyright*/
+/*footer copyright*/
 footer .copyright {
     background-color: #000000;
     border-top: solid white 1px;
@@ -280,6 +328,7 @@ footer .copyright div h4{
             height: 300px;
         }
 }
+
 /*991*/
 @media screen and (max-width:991px){
     /*header*/
