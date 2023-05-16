@@ -40,7 +40,9 @@ main{
 #banner1 .carousel .carousel-inner div img {
     height: auto;
 }
-
+h1{
+    text-align: center;
+}
 /*Main INDEX productos-destacados*/
 .productos-destacados .destacado-caja {
     margin-top: 30px;
